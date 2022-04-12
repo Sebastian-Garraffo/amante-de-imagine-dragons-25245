@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/imagen 2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Amante de Imagine Dragons</title>
+</head>
+<body>
+    <header>
+        <nav class="NavBar flex-row container">
+            <picture>
+                <a href="../../index.html"><img src="../img/logo.jpg" alt="logo" class="ilustracion"></a>
+            </picture>
+            <ul class="menu flex-row">
+                <li class="menu__item">
+                    <a href="../../index.html" class="menu__link textoamarillo">INICIO</a>
+                </li>
+                <li class="menu__item">
+                    <a href="historia.html" class="menu__link textoamarillo">HISTORIA</a>
+                </li>
+                <li class="menu__item">
+                    <a href="integrantes.html" class="menu__link textoamarillo">INTEGRANTES</a>
+                </li>
+                <li class="menu__item">
+                    <a href="discografia.html" class="menu__link textoamarillo">DISCOGRAFIA</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contacto.html" class="menu__link textoamarillo">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="negrita titulo">CONTACTO</h1>
+            <div class="fondo">
+                <!--<h1 class="negrita titulo">CONTACTO</h1>-->
+                <form class="relleno sangria" action="enviar.php" metod="get" enctype="text/plain">
+                    <label for="name">Nombre y Apellido</label>
+                    <input type="text" name="name" required="">
+                    <br>
+                    <label for="">sexo: </label>
+                    <input type="radio" name="sexo" required="">
+                    <label for="sexo">masculino</label>
+                    <input type="radio" name="sexo">
+                    <label for="sexo">femenino</label>
+                    <br>
+                    <label for="mail">correo electrónico</label>
+                    <input type="email" name="mail">
+                    <br>
+                    <label for="cel">numero de celular</label>
+                    <input type="number" name="cel">
+                    <br>
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="ingrese su mensaje aqui" required=""></textarea>
+                    <br>
+                    <input type="submit" value="enviar mensaje">
+                    <input type="reset" value="borrar">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h3>INSTAGRAM</h3>
+            <h3>FACEBOOK</h3>
+            <h3>YOUTUBE</h3>
+            <h3>EMAIL</h3>
+        </div>
+    </footer>
+</body>
+</html>
