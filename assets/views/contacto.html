@@ -36,83 +36,42 @@
     <main>
         <div class="container">
             <h1 class="negrita titulo">CONTACTO</h1>
-            <div class="form-group">
-                <label for="name">nombre y apellido</label>
-                <input type="text" name="name" class="write form-control" required>
-                <br>
-    
-    
-                <label for="mail">correo electrónico</label>
-                <input type="email" name="mail" class="write form-control">
-                <br>
-    
-                <label for="cel">numero de celular</label>
-                <input type="number" name="cel" class="write form-control">
-                <br>
-                
-                <!-- 
-                <label for="">sexo: </label>
-                <input type="radio" name="sexo" required>
-                <label class="radio" for="sexo">masculino</label>
-                <input type="radio" name="sexo">
-                <label class="radio" for="sexo">femenino</label>
-                <br> 
-                --> 
-                
-                <label for="sexo">sexo:</label>
-                <div class="radio">
-                    <label><input type="radio" name="sexo" checked>hombre</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="sexo">mujer</label>
-                </div>
-    
-                <br>
-                
-                <textarea name="mensaje" id="" cols="30" rows="10" class="form-control" placeholder="ingrese su mensaje aqui" required></textarea>
-                
-                <br>
-    
-                <!--
-                <input type="submit" value="enviar mensaje">
-                <input type="reset" value="borrar">
-                -->
-                
-                <button type="submit" class="btn btn-dark">enviar</button>
-    
-            </div>
-            <!--<div class="fondo">
-                <!--<h1 class="negrita titulo">CONTACTO</h1>-->
-                <!--<form class="relleno sangria" action="enviar.php" metod="get" enctype="text/plain">
-                    <label for="name">Nombre y Apellido</label>
-                    <input type="text" name="name" required="">
-                    <br>
-                    <label for="">sexo: </label>
-                    <input type="radio" name="sexo" required="">
-                    <label for="sexo">masculino</label>
-                    <input type="radio" name="sexo">
-                    <label for="sexo">femenino</label>
-                    <br>
-                    <label for="mail">correo electrónico</label>
-                    <input type="email" name="mail">
-                    <br>
-                    <label for="cel">numero de celular</label>
-                    <input type="number" name="cel">
-                    <br>
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="ingrese su mensaje aqui" required=""></textarea>
-                    <br>
-                    <input type="submit" value="enviar mensaje">
-                    <input type="reset" value="borrar">
+            <div class="fondo">
+                <form class="relleno sangria" action="">
+                    <div class="field flex-column">
+                        <label for="name">Nombre y Apellido</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="eleccion flex-column">
+                        <label for="sexo">Sexo:</label>
+                        <div>
+                            <input type="radio" name="sexo">Masculino
+                        </div>
+                        <div>
+                            <input type="radio" name="sexo">Femenino
+                        </div>
+                    </div>
+                    <div class="field flex-column">
+                        <label for="mail">Correo Electrónico</label>
+                        <input type="e-mail" name="mail">
+                    </div>
+                    <div class="field flex-column">
+                        <label for="cel">Número de Celular</label>
+                        <input type="number" name="cel">
+                    </div>
+                    <div>
+                        <textarea class="textbox" name="mensaje" id="" cols="30" rows="10" placeholder="ingrese su mensaje aqui" required=""></textarea>
+                    </div>
                 </form>
-            </div>-->
+            </div>
         </div>
     </main>
     <footer>
         <div>
-            <h3>INSTAGRAM</h3>
-            <h3>FACEBOOK</h3>
-            <h3>YOUTUBE</h3>
-            <h3>EMAIL</h3>
+            <h3 class="redes negrita">INSTAGRAM</h3>
+            <h3 class="redes negrita">FACEBOOK</h3>
+            <h3 class="redes negrita">YOUTUBE</h3>
+            <h3 class="redes negrita">EMAIL</h3>
         </div>
     </footer>
 </body>
