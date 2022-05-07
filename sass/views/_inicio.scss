@@ -1,0 +1,58 @@
+main section article {
+    padding-top: 0.3rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+
+    p {
+        background-color: rgba(255, 211, 117, 0.808);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    div .banda {
+        width: 70em;
+        justify-content: center;
+    }    
+}
+
+/*Responsive*/
+
+@media screen and (max-width:479px) {
+    /*inicio*/
+    .banda {
+        width: 30em;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:599px) {
+    /*inicio*/
+    .banda {
+        width: 38em;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:767px) {
+    /*inicio*/
+    .banda {
+        width: 45em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    /*inicio*/
+    .banda {
+        width: 50em;
+    }
+}
+
+
+
+/*main section article p {
+    background-color: rgba(255, 211, 117, 0.808);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}*/

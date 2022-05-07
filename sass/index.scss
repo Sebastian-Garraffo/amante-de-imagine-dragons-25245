@@ -1,0 +1,21 @@
+/* Imports */
+
+/* Miscelanios */
+
+@import './misc/variables';
+
+@import './misc/normalize';
+@import './misc/mixins';
+
+/*Partials*/
+
+@import './partials/footer';
+@import './partials/header';
+
+/*Views*/
+
+@import './views/inicio';
+@import './views/integrantes';
+@import './views/historia';
+@import './views/discografia';
+@import './views/contacto';

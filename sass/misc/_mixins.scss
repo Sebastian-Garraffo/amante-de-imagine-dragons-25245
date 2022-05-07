@@ -1,0 +1,93 @@
+/* helpers */
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.textoamarillo {
+    color: rgba(255, 211, 117, 0.808);  
+    font-weight: bold;
+}
+
+.negrita {
+    font-weight: bold;
+}
+.titulo{    
+    font-size: $text-lg;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.relleno {
+    font-size: $text-md;
+} 
+
+.field {
+    margin-top: 0.5rem; 
+    margin-bottom: 0.5rem;
+}
+
+.fondo {
+    background-color: $tercary;
+}
+
+.sangria {
+    margin-left: 2rem;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;    
+}
+
+/* Responsive */
+
+@media screen and (max-width:479px) {
+    /*helpers*/
+    .negrita {
+        font-size: 1.2em;
+    }
+    .relleno {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:599px) {
+    /*helpers*/
+    .negrita {
+        font-size: 1.2em;
+    }
+    .relleno {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:767px) {
+    /*helpers*/
+    .negrita {
+        font-size: 1.3em;
+    }
+    .relleno {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    /*helpers*/
+    .negrita {
+        font-size: 1.3em;
+    }
+    .relleno {
+        font-size: 1em;
+    }
+}

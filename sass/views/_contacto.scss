@@ -1,0 +1,50 @@
+main div div {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+
+    form {
+        margin-top: 1.3rem; 
+        margin-bottom: 1.3rem;
+
+        .field label {
+            font-size: 1.2em;
+            margin-bottom: 0.3rem;
+        }
+        
+        .field input {
+            font-size: $text-md;
+            height: 2.5rem;
+            padding-left: 0.8rem;
+            width: 100%;
+            max-width: 25em;
+            border-radius: 0.5em;
+            border: 0.2em solid #fff;
+        }
+        
+        .eleccion {
+            font-size: 1.2em;
+        }
+
+        div .textbox {
+            font-size: $text-md;
+            border-radius: 0.5em;
+            border: 0.2em solid #fff;
+            width: 100%;
+            max-width: 25em;
+            padding-left: 0.8rem;
+        }
+
+        .submit button {
+            font-size: 1.2em;
+            padding: 0.5rem 1rem;
+            border: 0.2em solid #fff;
+            border-radius: 0.5em;
+
+            transition: color;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}

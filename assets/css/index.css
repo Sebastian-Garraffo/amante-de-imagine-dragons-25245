@@ -1,0 +1,487 @@
+/* Imports */
+/* Miscelanios */
+/* Variables */
+/* Reset */
+*,
+*::before
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* Globals */
+html {
+  font-size: 62.5%; }
+
+ul {
+  list-style-type: none;
+  font-size: 1.2em; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+p {
+  font-size: 1.2em; }
+
+body {
+  background-color: #5580B4;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+h1 {
+  margin-left: 1rem; }
+
+/*Responsive*/
+@media screen and (max-width: 479px) {
+  /*globals*/
+  h3 {
+    font-size: 1em; }
+  h2 {
+    font-size: 1em; }
+  p {
+    font-size: 0.8em; }
+  ul {
+    font-size: 0.8em; } }
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  /*globals*/
+  h3 {
+    font-size: 1.2em; }
+  h2 {
+    font-size: 1.2em; }
+  p {
+    font-size: 0.8em; }
+  ul {
+    font-size: 0.8em; } }
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /*globals*/
+  h3 {
+    font-size: 1.2em; }
+  h2 {
+    font-size: 1.2em; }
+  p {
+    font-size: 1em; }
+  ul {
+    font-size: 1em; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*globals*/
+  p {
+    font-size: 1em; }
+  ul {
+    font-size: 1em; } }
+
+/* helpers */
+.flex-row {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto; }
+
+.textoamarillo {
+  color: rgba(255, 211, 117, 0.808);
+  font-weight: bold; }
+
+.negrita {
+  font-weight: bold; }
+
+.titulo {
+  font-size: 2em;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.relleno {
+  font-size: 1.4em; }
+
+.field {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+.fondo {
+  background-color: #5BC8AF; }
+
+.sangria {
+  margin-left: 2rem; }
+
+.center {
+  align-items: center;
+  justify-content: center; }
+
+/* Responsive */
+@media screen and (max-width: 479px) {
+  /*helpers*/
+  .negrita {
+    font-size: 1.2em; }
+  .relleno {
+    font-size: 0.8em; } }
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  /*helpers*/
+  .negrita {
+    font-size: 1.2em; }
+  .relleno {
+    font-size: 0.8em; } }
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /*helpers*/
+  .negrita {
+    font-size: 1.3em; }
+  .relleno {
+    font-size: 1em; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*helpers*/
+  .negrita {
+    font-size: 1.3em; }
+  .relleno {
+    font-size: 1em; } }
+
+/*Partials*/
+footer {
+  background-color: #5FB0B7;
+  margin: 0px;
+  width: 100%;
+  min-height: 10vh;
+  padding: 0px;
+  text-align: center; }
+  footer div h3 {
+    display: inline-block;
+    margin-top: 3.8rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    transition: color 1.5s; }
+  footer div h3:hover {
+    color: white; }
+
+@media screen and (max-width: 479px) {
+  /*footer*/
+  footer div h3 {
+    margin-top: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 2rem; } }
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  /*footer*/
+  footer div h3 {
+    margin-top: 2rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 2rem; } }
+
+/* Responsive */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /*footer*/
+  footer div h3 {
+    margin-top: 2rem;
+    margin-left: 9.8rem;
+    margin-right: 9.8rem;
+    margin-bottom: 2rem; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*footer*/
+  footer div h3 {
+    margin-top: 2rem;
+    margin-left: 14.2rem;
+    margin-right: 14.2rem;
+    margin-bottom: 2rem; } }
+
+/*footer div h3 {
+    display: inline-block;
+    margin-top: 3.8rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+}*/
+header {
+  background-color: #5FB0B7; }
+  header .NavBar {
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem; }
+    header .NavBar .ilustracion {
+      flex-basis: 30%;
+      width: 5em; }
+    header .NavBar .menu {
+      flex-basis: 40%;
+      justify-content: space-between; }
+      header .NavBar .menu .menu__item .menu__link {
+        font-size: 1.4em;
+        padding: 1rem;
+        transition: color 1.5s; }
+      header .NavBar .menu .menu__item .menu__link:hover {
+        color: white; }
+
+/* Responsive */
+@media screen and (max-width: 479px) {
+  /*header*/
+  .menu {
+    font-size: 0.2em; }
+  header .ilustracion {
+    flex-basis: 30%;
+    width: 4em; } }
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  /*header*/
+  .menu {
+    font-size: 0.6em; } }
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /*header*/
+  .menu {
+    font-size: 0.8em; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*header*/
+  .menu {
+    font-size: 1em; } }
+
+/*header .NavBar {
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header .ilustracion {
+    flex-basis: 30%;
+    width: 5em;
+}
+
+header .menu {
+    flex-basis: 40%;
+    justify-content: space-between;
+}
+
+.menu .menu__item .menu__link {
+    font-size: $text-md);
+    padding: 1rem;
+}*/
+/*Views*/
+main section article {
+  padding-top: 0.3rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem; }
+  main section article p {
+    background-color: rgba(255, 211, 117, 0.808);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+  main section article div .banda {
+    width: 70em;
+    justify-content: center; }
+
+/*Responsive*/
+@media screen and (max-width: 479px) {
+  /*inicio*/
+  .banda {
+    width: 30em; } }
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  /*inicio*/
+  .banda {
+    width: 38em; } }
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /*inicio*/
+  .banda {
+    width: 45em; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*inicio*/
+  .banda {
+    width: 50em; } }
+
+/*main section article p {
+    background-color: rgba(255, 211, 117, 0.808);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}*/
+main article div {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
+  main article div section h2 {
+    background-color: rgba(255, 211, 117, 0.808);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+
+/*main article div section h2 {
+    background-color: rgba(255, 211, 117, 0.808);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}*/
+main section div {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+  main section div h2 {
+    background-color: rgba(255, 211, 117, 0.808);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+  main section div p {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+
+/*main section div h2 {
+    background-color: rgba(255, 211, 117, 0.808);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+main section div p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}*/
+main div table {
+  width: 100%;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 5rem;
+  padding-right: 5rem; }
+  main div table tr th {
+    font-size: 1.4em;
+    background-color: #5FB0B7;
+    padding: 1rem; }
+  main div table tr td {
+    font-size: 1.2em;
+    background-color: rgba(255, 211, 117, 0.808);
+    text-align: center; }
+    main div table tr td ul {
+      padding-right: 4rem; }
+
+/* Responsive */
+@media screen and (max-width: 479px) {
+  /*discografia*/
+  main div table tr th {
+    font-size: 1em; }
+  main div table tr td {
+    font-size: 1em; } }
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  /*discografia*/
+  main div table tr th {
+    font-size: 1.2em; }
+  main div table tr td {
+    font-size: 1em; } }
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /*discografia*/
+  main div table tr th {
+    font-size: 1.2em; }
+  main div table tr td {
+    font-size: 1em; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*discografia*/
+  main div table tr th {
+    font-size: 1.2em; }
+  main div table tr td {
+    font-size: 1em; } }
+
+/*main div table tr th {
+    font-size: $text-md);
+    background-color: #5FB0B7;
+    padding: 1rem;
+}
+
+main div table tr td {
+    font-size: 1.2em;
+    background-color: rgba(255, 211, 117, 0.808);
+    text-align: center;
+}
+
+main div table tr td ul {
+    padding-right: 4rem;
+}*/
+main div div {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem; }
+  main div div form {
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem; }
+    main div div form .field label {
+      font-size: 1.2em;
+      margin-bottom: 0.3rem; }
+    main div div form .field input {
+      font-size: 1.4em;
+      height: 2.5rem;
+      padding-left: 0.8rem;
+      width: 100%;
+      max-width: 25em;
+      /*margin-right: 4rem;*/
+      border-radius: 0.5em;
+      border: 0.2em solid #fff; }
+    main div div form .eleccion {
+      font-size: 1.2em; }
+    main div div form div .textbox {
+      font-size: 1.4em;
+      border-radius: 0.5em;
+      border: 0.2em solid #fff;
+      width: 100%;
+      max-width: 25em;
+      padding-left: 0.8rem; }
+    main div div form .submit button {
+      font-size: 1.2em;
+      padding: 0.5rem 1rem;
+      border: 0.2em solid #fff;
+      border-radius: 0.5em;
+      transition: color; }
+      main div div form .submit button:hover {
+        color: red; }
+
+/*form {
+    margin-top: 1.3rem; 
+    margin-bottom: 1.3rem;
+}
+
+.field label {
+    font-size: 1.2em;
+    margin-bottom: 0.3rem;
+}
+
+.field input {
+    font-size: $text-md);
+    height: 2.5rem;
+    padding-left: 0.8rem;
+    width: 100%;
+    max-width: 25em;
+    /*margin-right: 4rem;*/
+/*border-radius: 0.5em;
+    border: 0.2em solid #fff;
+}
+
+.eleccion {
+    font-size: 1.2em;
+}
+
+.textbox {
+    font-size: $text-md);
+    border-radius: 0.5em;
+    border: 0.2em solid #fff;
+    width: 100%;
+    max-width: 25em;
+    padding-left: 0.8rem;
+}*/
